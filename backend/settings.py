@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-2qnq^=0y8ilhl%jtedce77y%i3n$8#jhvioajlminj$65ut8o=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tclientes.cl', 'www.tclientes.cl']
+
 
 
 # Application definition
@@ -125,3 +126,5 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+FORCE_SCRIPT_NAME = '/gestor-clientes'
+STATIC_URL = '/gestor-clientes/static/'
